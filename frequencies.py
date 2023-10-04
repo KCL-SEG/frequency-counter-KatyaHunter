@@ -2,6 +2,15 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def frequencies(items):
-    frequencies = {}
-    # Your code goes here
-    return frequencies
+	frequencies = {}
+	tempItems = []
+    
+	for i in range (0, len(tempItems)):
+		tempItems.append(str(items[i]))
+
+	for i in range (0,len(tempItems)):
+		if tempItems[i] not in frequencies.keys():
+			noOfAppearances = tempItems.count(tempItems[i])
+			frequencies[tempItems[i]] = noOfAppearances
+	
+	return frequencies
