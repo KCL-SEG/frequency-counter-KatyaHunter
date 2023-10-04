@@ -5,7 +5,7 @@ def frequencies(items):
 	frequencies = {}
 	tempItems = []
     
-	for i in range (0, len(tempItems)):
+	for i in range (0, len(items)):
 		tempItems.append(str(items[i]))
 
 	for i in range (0,len(tempItems)):
